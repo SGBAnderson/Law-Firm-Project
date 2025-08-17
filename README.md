@@ -1,88 +1,118 @@
-Gerenciamento Jurídico - Next.js, Node.js e PostgreSQL
-Este é um sistema completo de gerenciamento para escritórios de advocacia, projetado para otimizar o controle de processos, clientes, prazos e documentos. Desenvolvido com uma stack de tecnologias modernas, oferece uma solução robusta e intuitiva para advogados e suas equipes.
+## Gerenciamento Jurídico - Next.js, Node.js e PostgreSQL
 
-Funcionalidades Principais
-Gestão de Processos: Cadastro detalhado de processos, com informações de andamento, partes envolvidas e histórico de movimentações.
+Este é um sistema completo de gerenciamento para escritórios de advocacia, projetado para otimizar o controle de processos, clientes, prazos e documentos. Desenvolvido com uma **stack** de tecnologias modernas, oferece uma solução robusta e intuitiva para advogados e suas equipes.
 
-Controle de Clientes: Uma base de dados completa para gerenciar informações de clientes, incluindo contatos, documentos e processos relacionados.
+---
 
-Agenda de Prazos: Ferramenta para visualização e gerenciamento de prazos processuais e compromissos importantes.
+### Funcionalidades Principais
 
-Organização de Documentos: Um sistema eficiente para armazenar e categorizar documentos digitalizados.
+* **Gestão de Processos**: Cadastro detalhado de processos, com informações de andamento, partes envolvidas e histórico de movimentações.
+* **Controle de Clientes**: Uma base de dados completa para gerenciar informações de clientes, incluindo contatos, documentos e processos relacionados.
+* **Agenda de Prazos**: Ferramenta para visualização e gerenciamento de prazos processuais e compromissos importantes.
+* **Organização de Documentos**: Um sistema eficiente para armazenar e categorizar documentos digitalizados.
+* **Interface Intuitiva**: Um **dashboard** limpo e fácil de usar, projetado para simplificar a rotina do escritório.
 
-Interface Intuitiva: Um dashboard limpo e fácil de usar, projetado para simplificar a rotina do escritório.
+---
 
-Tecnologias Utilizadas
-Next.js: Framework React para o desenvolvimento do frontend, garantindo renderização rápida e uma experiência de usuário fluida.
+### Tecnologias Utilizadas
 
-Node.js: Runtime JavaScript para o backend, oferecendo alta performance e escalabilidade para o gerenciamento de dados.
+* **Next.js**: Framework React para o desenvolvimento do **frontend**, garantindo renderização rápida e uma experiência de usuário fluida.
+* **Node.js**: **Runtime** JavaScript para o **backend**, oferecendo alta performance e escalabilidade para o gerenciamento de dados.
+* **PostgreSQL**: Sistema de gerenciamento de banco de dados relacional (SGBDR) robusto e confiável, ideal para armazenar dados complexos.
+* **Outras**: mencione outras bibliotecas ou frameworks específicos que você tenha utilizado, como o Prisma, Sequelize, Material-UI, Tailwind CSS, etc.
 
-PostgreSQL: Sistema de gerenciamento de banco de dados relacional (SGBDR) robusto e confiável, ideal para armazenar dados complexos.
+---
 
-Outras: mencione outras bibliotecas ou frameworks específicos que você tenha utilizado, como o Prisma, Sequelize, Material-UI, Tailwind CSS, etc.
+### Como Rodar o Projeto
 
-Como Rodar o Projeto
 Estas instruções ajudarão você a configurar e rodar o projeto em seu ambiente de desenvolvimento.
 
-Pré-requisitos
-Node.js (versão 18 ou superior)
+#### Pré-requisitos
 
-PostgreSQL (versão 14 ou superior)
+* Node.js (versão 18 ou superior)
+* PostgreSQL (versão 14 ou superior)
 
-Configuração
-Clone o repositório:
+#### Configuração
 
-Bash
+1.  **Clone o repositório:**
 
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
-Configurar o Banco de Dados:
+    ```bash
+    git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
+    cd seu-repositorio
+    ```
 
-Crie um banco de dados PostgreSQL com o nome de sua preferência (ex: juridico_db).
+2.  **Configurar o Banco de Dados:**
+    * Crie um banco de dados PostgreSQL com o nome de sua preferência (ex: `juridico_db`).
+    * Crie um arquivo `.env` na raiz do projeto e configure as variáveis de ambiente para a conexão com o banco de dados.
 
-Crie um arquivo .env na raiz do projeto e configure as variáveis de ambiente para a conexão com o banco de dados.
+    ```env
+    DATABASE_URL="postgresql://[USUARIO]:[SENHA]@[HOST]:[PORTA]/[NOME_DO_BANCO]"
+    ```
 
-Snippet de código
+3.  **Instalar Dependências:**
+    * No diretório principal do projeto, instale as dependências do **backend**.
 
-DATABASE_URL="postgresql://[USUARIO]:[SENHA]@[HOST]:[PORTA]/[NOME_DO_BANCO]"
-Instalar Dependências:
+    **Usando npm:**
+    ```bash
+    npm install
+    ```
+    **Usando Yarn:**
+    ```bash
+    yarn install
+    ```
 
-No diretório principal do projeto, instale as dependências do backend:
+    * No diretório do **frontend** (ex: `cd client` ou `cd frontend`), instale as dependências.
 
-Bash
+    **Usando npm:**
+    ```bash
+    npm install
+    ```
+    **Usando Yarn:**
+    ```bash
+    yarn install
+    ```
 
-yarn install
-No diretório do frontend (ex: cd client ou cd frontend), instale as dependências:
+4.  **Rodar Migrações (se houver):**
+    * (Ajuste o comando conforme o ORM que você está usando).
 
-Bash
+    **Usando npm:**
+    ```bash
+    npx prisma migrate dev --name init
+    ```
+    **Usando Yarn:**
+    ```bash
+    yarn prisma migrate dev --name init
+    ```
 
-yarn install
-Rodar Migrações (se houver):
+5.  **Rodar o Servidor:**
+    * Inicie o **backend**.
 
-Bash
+    **Usando npm:**
+    ```bash
+    npm run dev
+    ```
+    **Usando Yarn:**
+    ```bash
+    yarn dev
+    ```
 
-yarn prisma migrate dev --name init
-(Ajuste o comando conforme o ORM que você está usando, ex: yarn sequelize-cli db:migrate).
+    * Inicie o **frontend**.
 
-Rodar o Servidor:
+    **Usando npm:**
+    ```bash
+    npm run dev
+    ```
+    **Usando Yarn:**
+    ```bash
+    yarn dev
+    ```
 
-Inicie o backend:
+6.  O sistema estará disponível em `http://localhost:3000` (ou a porta que o Next.js estiver configurado para usar).
 
-Bash
+---
 
-yarn dev
-Inicie o frontend:
+### Contribuição
 
-Bash
+Sinta-se à vontade para abrir **issues** ou enviar **pull requests** para aprimorar o projeto.
 
-yarn dev
-O sistema estará disponível em http://localhost:3000 (ou a porta que o Next.js estiver configurado para usar).
-
-Contribuição
-Sinta-se à vontade para abrir issues ou enviar pull requests para aprimorar o projeto.
-
-Licença
-Este projeto está sob a licença MIT (ou a licença que você desejar).
-
-Contato
-Seu Nome - [Seu Email] - [Seu Perfil do LinkedIn/GitHub]
+---
