@@ -73,7 +73,7 @@ Estas instruções ajudarão você a configurar e rodar o projeto em seu ambient
     ```
 
 4.  **Rodar Migrações (se houver):**
-    * (Ajuste o comando conforme o ORM que você está usando).
+    * (Ajuste o comando conforme o ORM que você está usando)...
 
     **Usando npm:**
     ```bash
