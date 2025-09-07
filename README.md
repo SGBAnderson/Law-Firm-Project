@@ -114,3 +114,5 @@ Estas instruções ajudarão você a configurar e rodar o projeto em seu ambient
 ### Contribuição
 
 Sinta-se à vontade para abrir **issues** ou enviar **pull requests** para aprimorar o projeto.
+
+---
