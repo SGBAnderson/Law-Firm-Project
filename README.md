@@ -6,8 +6,8 @@ Este é um sistema completo de gerenciamento para escritórios de advocacia, pro
 
 ### Funcionalidades Principais
 
-* **Gestão de Processos**: Cadastro detalhado de processos, com informações de andamento, partes envolvidas e histórico de movimentações.
-* **Controle de Clientes**: Uma base de dados completa para gerenciar informações de clientes, incluindo contatos, documentos e processos relacionados.
+* **Gestão de Processos**: Cadastro detalhado de processos, com informações de andamento, partes envolvidas e histórico de movimentações...
+* **Controle de Clientes**: Uma base de dados completa para gerenciar informações de clientes, incluindo contatos, documentos e processos relacionados..
 * **Agenda de Prazos**: Ferramenta para visualização e gerenciamento de prazos processuais e compromissos importantes.
 * **Organização de Documentos**: Um sistema eficiente para armazenar e categorizar documentos digitalizados.
 * **Interface Intuitiva**: Um **dashboard** limpo e fácil de usar, projetado para simplificar a rotina do escritório.
