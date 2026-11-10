@@ -1,4 +1,3 @@
-
 ## Gerenciamento Jurídico - Next.js, Node.js e PostgreSQL
 
 Este é um sistema completo de gerenciamento para escritórios de advocacia, projetado para otimizar o controle de processos, clientes, prazos e documentos. Desenvolvido com uma **stack** de tecnologias modernas, oferece uma solução robusta e intuitiva para advogados e suas equipes.
